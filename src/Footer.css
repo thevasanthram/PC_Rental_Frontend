@@ -1,4 +1,4 @@
-#footer_container{
+#footer_container {
     background-color: #7F5283;
     display: flex;
     flex-direction: column;
@@ -13,25 +13,24 @@
     /* padding: 10px; */
 }
 
-.footer_heading{
+.footer_heading {
     position: relative;
-    height: 50px;
+    height: 40px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 35px;
+    font-size: 25px;
     color: #A6D1E6;
     font-family: 'Merriweather', serif;
 }
 
-.footer_content{
+.footer_content {
     padding: 0px 15px;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Inter,sans-serif';
     font-weight: 500;
     color: #eeeeee;
 }
-
 #contact_container{
     display: flex;
     align-items: center;
