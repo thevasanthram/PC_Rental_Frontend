@@ -15,28 +15,28 @@
 
 .footer_heading {
     position: relative;
-    height: 40px;
+    height: 55%;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 150%;
     color: #A6D1E6;
     font-family: 'Merriweather', serif;
 }
 
 .footer_content {
     padding: 0px 15px;
-    font-size: 20px;
+    font-size: 120%;
     font-family: 'Inter,sans-serif';
     font-weight: 500;
     color: #eeeeee;
 }
+
 #contact_container{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5rem;
-    background-color: #7F5283;
 }
 
 #contact_us_container{
@@ -50,12 +50,13 @@
 #contact_list_container{
 }
 
-#social_media_container{
+#social_media_container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    width: 25%;
 }
 
 #social_media_list{
@@ -65,8 +66,8 @@
     gap: 1rem;
 }
 
-.social_media_logo{
-    width: 50px;
+.social_media_logo {
+    width: 10%;
     cursor: pointer;
 }
 
