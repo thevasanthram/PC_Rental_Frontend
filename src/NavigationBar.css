@@ -6,16 +6,16 @@
     position: sticky;
     top: 5%;
     width: 80%;
-    height: 50px;
+    height: 7vh;
     background-color: #7F5283;
     padding: 10px 35px;
-    left: 10%;
+    left: 8%;
     border-radius: 15px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     z-index: 3;
 }
 
-.navigation_buttons {
+.navigation_buttons {   
     background-color: #7F5283;
     border: 0px;
     border-radius: 10px;
@@ -26,6 +26,22 @@
     cursor: pointer;
 }
 
-/* .navigation_buttons:hover {
-    background-color: #6b336f;
-} */
+
+@media screen and (max-width: 768px) {
+    #navigation_bar {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        gap: 1rem;
+        position: sticky;
+        top: 5%;
+        width: 80%;
+        height: 50px;
+        background-color: #7F5283;
+        padding: 10px 35px;
+        left: 10%;
+        border-radius: 15px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        z-index: 3;
+    }
+}

@@ -15,11 +15,11 @@ function LandingPage(){
                     <div className='landing_page_heading'>Laptops on Rent</div>
                     <div className='landing_page_content'>Welcome to ABC Systems, your source for high-quality laptop rentals. We offer a wide range of models and customization options to meet your unique needs.</div>
                 </div>
-                <img src={WelcomeImage} alt="" style={{width:'800px'}}/>
+                <img src={WelcomeImage} alt="" style={{width:'45%'}}/>
             </div>
 
             <div className='landing_page_card'>
-                <img src={BannerLaptop} alt="" style={{width:'700px'}}/>
+                <img src={BannerLaptop} alt="" style={{width:'45%'}}/>
                 <div className='landing_page_text_container'>
                     <div className='landing_page_heading'>Features and Benefits</div>
                     <div className='landing_page_content'>
@@ -38,11 +38,11 @@ function LandingPage(){
                     <div className='landing_page_heading'>How it Works</div>
                     <div className='landing_page_content'>Select your ideal laptop from our website and make an online payment. We'll deliver the same laptop to you in no time.</div>
                 </div>
-                <img src={How_it_works_image} alt="" style={{width: '700px'}}/>
+                <img src={How_it_works_image} alt="" style={{width: '45%'}}/>
             </div>
 
             <div className='landing_page_card'>
-                <img src={ThreeLaptops} alt="" style={{width:'700px'}}/>
+                <img src={ThreeLaptops} alt="" style={{width:'50%'}}/>
                 <div className='landing_page_text_container'>
                     <div className='landing_page_heading'>Rental</div>
                     <div className='landing_page_content'>
@@ -60,11 +60,11 @@ function LandingPage(){
                         <li>Our team can work with you to create a customized rental package that meets your unique needs and budget. Contact us today to learn more!</li>
                     </div>
                 </div>
-                <img src={Customization_image} alt="" style={{width: '700px'}}/>
+                <img src={Customization_image} alt="" style={{width: '50%'}}/>
             </div>
 
             <div className='landing_page_card'>
-                <img src={TwoLaptops} alt="" style={{width:'700px'}}/>
+                <img src={TwoLaptops} alt="" style={{width:'45%'}}/>
                 <div className='landing_page_text_container'>
                     <div className='landing_page_heading'>Buying</div>
                     <div className='landing_page_content'>
