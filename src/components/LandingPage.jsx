@@ -1,11 +1,11 @@
 import React from 'react';
-import './LandingPage.css'
-import ThreeLaptops from './threelaptops.png'
-import BannerLaptop from './banner-mockup.png'
-import TwoLaptops from './lenovo-laptop-collection.png'
-import Customization_image from './customization_image.gif';
-import WelcomeImage from './laptops.png'
-import How_it_works_image from './how_it_works.png'
+import './../css/LandingPage.css'
+import ThreeLaptops from './../images/threelaptops.png'
+import BannerLaptop from './../images/banner-mockup.png'
+import TwoLaptops from './../images/lenovo-laptop-collection.png'
+import Customization_image from './../images/customization_image.gif';
+import WelcomeImage from './../images/laptops.png'
+import How_it_works_image from './../images/how_it_works.png'
 
 function LandingPage(){
     return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import './RentalPage.css'
+import './../css/RentalPage.css'
 
 function RentalPage(){
     return (

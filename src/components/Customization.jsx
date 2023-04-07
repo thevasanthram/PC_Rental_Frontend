@@ -1,5 +1,5 @@
 import React from "react";
-import './Customization.css';
+import './../css/Customization.css'
 
 function Customization(){
     return (

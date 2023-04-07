@@ -1,12 +1,12 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import BuyingPage from './BuyingPage';
-import RentalPage from './RentalPage';
-import LandingPage from './LandingPage';
-import NavigationBar from './NavigationBar';
-import Customization from './Customization';
-import Footer from './Footer';
+import BuyingPage from './components/BuyingPage';
+import RentalPage from './components/RentalPage';
+import LandingPage from './components/LandingPage';
+import NavigationBar from './components/NavigationBar';
+import Customization from './components/Customization';
+import Footer from './components/Footer';
 
 
 function App() {
