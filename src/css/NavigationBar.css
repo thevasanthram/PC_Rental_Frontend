@@ -15,7 +15,7 @@
     z-index: 3;
 }
 
-.navigation_buttons {   
+.navigation_buttons {
     background-color: #7F5283;
     border: 0px;
     border-radius: 10px;
@@ -34,8 +34,8 @@
         height: 6vh;
         left: 6%;
     }
-    
-    .navigation_buttons {   
+
+    .navigation_buttons {
         font-size: 145%;
         height: 100%;
     }
@@ -49,8 +49,8 @@
         height: 5vh;
         left: 8%;
     }
-    
-    .navigation_buttons {   
+
+    .navigation_buttons {
         font-size: 90%;
         height: 100%;
     }

@@ -1,7 +1,6 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import BuyingPage from './components/BuyingPage';
 import RentalPage from './components/RentalPage';
 import LandingPage from './components/LandingPage';
 import NavigationBar from './components/NavigationBar';
@@ -18,7 +17,6 @@ function App() {
           <Route path='/'  element={<LandingPage />} />
           <Route path='/rent' element={<RentalPage />} />
           <Route path='/customize' element={<Customization />} />
-          <Route path='/buy' element={<BuyingPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>

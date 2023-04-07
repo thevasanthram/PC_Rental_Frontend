@@ -62,17 +62,6 @@ function LandingPage(){
                 </div>
                 <img src={Customization_image} alt="" style={{width: '50%'}}/>
             </div>
-
-            <div className='landing_page_card'>
-                <img src={TwoLaptops} alt="" style={{width:'45%'}}/>
-                <div className='landing_page_text_container'>
-                    <div className='landing_page_heading'>Buying</div>
-                    <div className='landing_page_content'>
-                        <li>Looking to buy a laptop? Our store features a wide range of top brands and models to suit your needs and budget.</li>
-                        <li>From budget-friendly options to high-performance machines, our laptop selection has something for everyone. Shop today and find the perfect laptop for you!</li>
-                    </div>
-                </div>
-            </div>
         </div>
     )
 }
