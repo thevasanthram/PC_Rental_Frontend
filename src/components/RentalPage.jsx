@@ -465,16 +465,14 @@ function RentalPage() {
         })
     }
 
-    function filtering(event, category, filtering_value) {
+    function filtering(category, filtering_value) {
         const rental_pc_container = document.getElementById('rental_pc_container')
-        
+
         while (rental_pc_container.firstChild) {
             rental_pc_container.removeChild(rental_pc_container.lastChild)
         }
 
         laptopData.map((laptop) => {
-            console.log('category: ', category)
-            console.log('filtering_value: ', filtering_value)
             if (laptop[category] == filtering_value) {
                 const rental_pc_card = document.createElement('div')
                 rental_pc_card.className = 'rental_pc_card'
