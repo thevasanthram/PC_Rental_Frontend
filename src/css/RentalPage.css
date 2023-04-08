@@ -16,12 +16,39 @@
 }
 
 .filtering_condition_image {
-    width: 7%;
     cursor: pointer;
 }
 
-.filtering_condition_image:hover {
+#laptop_icon{
+    width: 9%;
+}
+
+#laptop_icon:hover {
+    width: 10%;
+}
+
+#processor_icon{
     width: 8%;
+}
+
+#processor_icon:hover {
+    width: 9%;
+}
+
+#ram_icon{
+    width: 11%;
+}
+
+#ram_icon:hover {
+    width: 12%;
+}
+
+#ssd_icon{
+    width: 13%;   
+}
+
+#ssd_icon:hover {
+    width: 14%;
 }
 
 /* PC Rental Card */
@@ -50,16 +77,11 @@
     color: #007185;
     border: 0px;
     font-family: 'Anuphan', sans-serif;
-    font-size: large;
+    font-size: larger;
+    font-weight: 600;
 }
 
 .rental_pc_side_filtering_button:hover {
-    font-weight: 600;
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-.rental_pc_side_filtering_button:visited {
     font-weight: 600;
     cursor: pointer;
     text-decoration: underline;
@@ -127,6 +149,38 @@
         margin: 1rem 0rem 1rem 0rem;
     }
 
+    #laptop_icon{
+        width: 13%;
+    }
+    
+    #laptop_icon:hover {
+        width: 14%;
+    }
+    
+    #processor_icon{
+        width: 11%;
+    }
+    
+    #processor_icon:hover {
+        width: 12%;
+    }
+    
+    #ram_icon{
+        width: 14%;
+    }
+    
+    #ram_icon:hover {
+        width: 15%;
+    }
+    
+    #ssd_icon{
+        width: 18%;   
+    }
+    
+    #ssd_icon:hover {
+        width: 19%;
+    }
+
     /* PC Rental Card */
     #rental_pc_main_content {
         gap: 1rem;
@@ -172,10 +226,39 @@
     #filtering_condition_container {
         margin: 2rem 0rem 1rem 0rem;
         height: 10vh;
+        gap: 3rem;
     }
 
-    .filtering_condition_image{
-        width: 10%;
+    #laptop_icon{
+        width: 15%;
+    }
+    
+    #laptop_icon:hover {
+        width: 16%;
+    }
+    
+    #processor_icon{
+        width: 13%;
+    }
+    
+    #processor_icon:hover {
+        width: 14%;
+    }
+    
+    #ram_icon{
+        width: 18%;
+    }
+    
+    #ram_icon:hover {
+        width: 19%;
+    }
+    
+    #ssd_icon{
+        width: 19%;   
+    }
+    
+    #ssd_icon:hover {
+        width: 20%;
     }
 
     /* PC Rental Card */
@@ -190,7 +273,7 @@
     }
 
     .rental_pc_side_filtering_button {
-        font-size: medium;
+        font-size: unset;
     }
 
     #rental_pc_container {
@@ -224,10 +307,39 @@
     #filtering_condition_container {
         margin: 1rem 0rem 0rem 0rem;
         height: 8vh;
+        gap: 1rem ;
     }
 
-    .filtering_condition_image{
-        width: 10%;
+    #laptop_icon{
+        width: 15%;
+    }
+    
+    #laptop_icon:hover {
+        width: 16%;
+    }
+    
+    #processor_icon{
+        width: 13%;
+    }
+    
+    #processor_icon:hover {
+        width: 14%;
+    }
+    
+    #ram_icon{
+        width: 20%;
+    }
+    
+    #ram_icon:hover {
+        width: 21%;
+    }
+    
+    #ssd_icon{
+        width: 22%;   
+    }
+    
+    #ssd_icon:hover {
+        width: 23%;
     }
 
     /* PC Rental Card */
@@ -242,7 +354,7 @@
     }
 
     .rental_pc_side_filtering_button {
-        font-size: x-small;
+        font-size: smaller;
     }
 
     #rental_pc_container {

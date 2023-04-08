@@ -2,9 +2,14 @@ import React from 'react';
 import './../css/RentalPage.css'
 import TwoLaptops from './../images/lenovo-laptop-collection.png'
 import LaptopIcon from './../images/laptop_icon.png'
-import ProcessorIcon from './../images/processor.png'
-import RAMIcon from './../images/RAM.png'
+import Processor from './../images/processor.png'
+import RAM from './../images/RAM.png'
 import StorageIcon from './../images/Storage.jpg'
+
+import SSD_Icon from './../images/ssd_icon.png'
+import ProcessorIcon from './../images/processor_icon.png'
+import RAMIcon from './../images/ram_icon.png'
+
 
 function RentalPage() {
     const laptopData = [
@@ -523,10 +528,10 @@ function RentalPage() {
     return (
         <div id='rental_pc_component'>
             <div id='filtering_condition_container'>
-                <img src={LaptopIcon} onClick={() => dynamicFilteringCondition('Brand')} alt="" className='filtering_condition_image' />
-                <img src={ProcessorIcon} onClick={() => dynamicFilteringCondition('Core')} alt="" className='filtering_condition_image' />
-                <img src={RAMIcon} alt="" onClick={() => dynamicFilteringCondition('RAM')} className='filtering_condition_image' />
-                <img src={StorageIcon} alt="" onClick={() => dynamicFilteringCondition('Storage')} className='filtering_condition_image' />
+                <img src={LaptopIcon} onClick={() => dynamicFilteringCondition('Brand')} alt="" id='laptop_icon' className='filtering_condition_image' />
+                <img src={ProcessorIcon} onClick={() => dynamicFilteringCondition('Core')} alt="" id='processor_icon' className='filtering_condition_image'/>
+                <img src={RAMIcon} alt="" onClick={() => dynamicFilteringCondition('RAM')} id='ram_icon' className='filtering_condition_image'/>
+                <img src={SSD_Icon} alt="" onClick={() => dynamicFilteringCondition('Storage')} id='ssd_icon' className='filtering_condition_image' />
             </div>
 
             <div id='rental_pc_main_content'>
