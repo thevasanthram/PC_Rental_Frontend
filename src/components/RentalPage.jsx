@@ -2,9 +2,6 @@ import React from 'react';
 import './../css/RentalPage.css'
 import TwoLaptops from './../images/lenovo-laptop-collection.png'
 import LaptopIcon from './../images/laptop_icon.png'
-import Processor from './../images/processor.png'
-import RAM from './../images/RAM.png'
-import StorageIcon from './../images/Storage.jpg'
 
 import SSD_Icon from './../images/ssd_icon.png'
 import ProcessorIcon from './../images/processor_icon.png'
