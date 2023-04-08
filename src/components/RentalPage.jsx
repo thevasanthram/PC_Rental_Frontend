@@ -1,294 +1,565 @@
 import React from 'react';
 import './../css/RentalPage.css'
 import TwoLaptops from './../images/lenovo-laptop-collection.png'
+import LaptopIcon from './../images/laptop_icon.png'
+import ProcessorIcon from './../images/processor.png'
+import RAMIcon from './../images/RAM.png'
+import StorageIcon from './../images/Storage.jpg'
 
 function RentalPage() {
-    const laptopData = {
-        'Dell': {
-            'Core i3': {
-                '8GB RAM': {
-                    '256GB SSD': {
-                        '14 or 15 inches': 2500
-                    },
-                    '512GB SSD': {
-                        '14 or 15 inches': 2600
-                    },
-                    '1TB SSD': {
-                        '14 or 15 inches': 2750
-                    }
-                },
-                '16GB RAM': {
-                    '256GB SSD': {
-                        '14 or 15 inches': 2800
-                    },
-                    '512GB SSD': {
-                        '14 or 15 inches': 2850
-                    },
-                    '1TB SSD': {
-                        '14 or 15 inches': 3000
-                    }
-                }
-            },
-            'Core i5': {
-                '8GB RAM': {
-                    '256GB SSD': {
-                        '14 or 15 inches': 2750
-                    },
-                    '512GB SSD': {
-                        '14 or 15 inches': 2850
-                    },
-                    '1TB SSD': {
-                        '14 or 15 inches': 3000
-                    }
-                },
-                '16GB RAM': {
-                    '256GB SSD': {
-                        '14 or 15 inches': 3150
-                    },
-                    '512GB SSD': {
-                        '14 or 15 inches': 3200
-                    },
-                    '1TB SSD': {
-                        '14 or 15 inches': 3300
-                    }
-                }
-            },
-            'Core i7': {
-                '8GB RAM': {
-                    '256GB SSD': {
-                        '14 or 15 inches': 3000
-                    },
-                    '512GB SSD': {
-                        '14 or 15 inches': 3050
-                    },
-                    '1TB SSD': {
-                        '14 or 15 inches': 3100
-                    }
-                },
-                '16GB RAM': {
-                    '256GB SSD': {
-                        '14 or 15 inches': 3250
-                    },
-                    '512GB SSD': {
-                        '14 or 15 inches': 3300
-                    },
-                    '1TB SSD': {
-                        '14 or 15 inches': 3500
-                    }
-                }
-            }
+    const laptopData = [
+        {
+            Brand: 'Lenovo',
+            Core: 'Core i3',
+            RAM: '8GB RAM',
+            Storage: '256GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 2500
         },
-        'Lenovo': {
-            'Core i3': {
-                '8GB RAM': {
-                    '256GB SSD': {
-                        '14 or 15 inches': 2500
-                    },
-                    '512GB SSD': {
-                        '14 or 15 inches': 2600
-                    },
-                    '1TB SSD': {
-                        '14 or 15 inches': 2750
-                    }
-                },
-                '16GB RAM': {
-                    '256GB SSD': {
-                        '14 or 15 inches': 2800
-                    },
-                    '512GB SSD': {
-                        '14 or 15 inches': 2850
-                    },
-                    '1TB SSD': {
-                        '14 or 15 inches': 3000
-                    }
-                }
-            },
-            'Core i5': {
-                '8GB RAM': {
-                    '256GB SSD': {
-                        '14 or 15 inches': 2750
-                    },
-                    '512GB SSD': {
-                        '14 or 15 inches': 2850
-                    },
-                    '1TB SSD': {
-                        '14 or 15 inches': 3000
-                    }
-                },
-                '16GB RAM': {
-                    '256GB SSD': {
-                        '14 or 15 inches': 3150
-                    },
-                    '512GB SSD': {
-                        '14 or 15 inches': 3200
-                    },
-                    '1TB SSD': {
-                        '14 or 15 inches': 3300
-                    }
-                }
-            },
-            'Core i7': {
-                '8GB RAM': {
-                    '256GB SSD': {
-                        '14 or 15 inches': 3000
-                    },
-                    '512GB SSD': {
-                        '14 or 15 inches': 3050
-                    },
-                    '1TB SSD': {
-                        '14 or 15 inches': 3100
-                    }
-                },
-                '16GB RAM': {
-                    '256GB SSD': {
-                        '14 or 15 inches': 3250
-                    },
-                    '512GB SSD': {
-                        '14 or 15 inches': 3300
-                    },
-                    '1TB SSD': {
-                        '14 or 15 inches': 3500
-                    }
-                }
-            }
+        {
+            Brand: 'Lenovo',
+            Core: 'Core i3',
+            RAM: '8GB RAM',
+            Storage: '512GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 2600
         },
-        'HP': {
-            'Core i3': {
-                '8GB RAM': {
-                    '256GB SSD': {
-                        '14 or 15 inches': 2500
-                    },
-                    '512GB SSD': {
-                        '14 or 15 inches': 2600
-                    },
-                    '1TB SSD': {
-                        '14 or 15 inches': 2750
-                    }
-                },
-                '16GB RAM': {
-                    '256GB SSD': {
-                        '14 or 15 inches': 2800
-                    },
-                    '512GB SSD': {
-                        '14 or 15 inches': 2850
-                    },
-                    '1TB SSD': {
-                        '14 or 15 inches': 3000
-                    }
-                }
-            },
-            'Core i5': {
-                '8GB RAM': {
-                    '256GB SSD': {
-                        '14 or 15 inches': 2750
-                    },
-                    '512GB SSD': {
-                        '14 or 15 inches': 2850
-                    },
-                    '1TB SSD': {
-                        '14 or 15 inches': 3000
-                    }
-                },
-                '16GB RAM': {
-                    '256GB SSD': {
-                        '14 or 15 inches': 3150
-                    },
-                    '512GB SSD': {
-                        '14 or 15 inches': 3200
-                    },
-                    '1TB SSD': {
-                        '14 or 15 inches': 3300
-                    }
-                }
-            },
-            'Core i7': {
-                '8GB RAM': {
-                    '256GB SSD': {
-                        '14 or 15 inches': 3000
-                    },
-                    '512GB SSD': {
-                        '14 or 15 inches': 3050
-                    },
-                    '1TB SSD': {
-                        '14 or 15 inches': 3100
-                    }
-                },
-                '16GB RAM': {
-                    '256GB SSD': {
-                        '14 or 15 inches': 3250
-                    },
-                    '512GB SSD': {
-                        '14 or 15 inches': 3300
-                    },
-                    '1TB SSD': {
-                        '14 or 15 inches': 3500
-                    }
-                }
-            }
+        {
+            Brand: 'Lenovo',
+            Core: 'Core i3',
+            RAM: '8GB RAM',
+            Storage: '1TB SSD',
+            Inches: '14 or 15 inches',
+            Price: 2750
         },
+        {
+            Brand: 'Lenovo',
+            Core: 'Core i3',
+            RAM: '16GB RAM',
+            Storage: '256GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 2800
+        },
+        {
+            Brand: 'Lenovo',
+            Core: 'Core i3',
+            RAM: '16GB RAM',
+            Storage: '512GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 2850
+        },
+        {
+            Brand: 'Lenovo',
+            Core: 'Core i3',
+            RAM: '16GB RAM',
+            Storage: '1TB SSD',
+            Inches: '14 or 15 inches',
+            Price: 3000
+        },
+        {
+            Brand: 'Lenovo',
+            Core: 'Core i5',
+            RAM: '8GB RAM',
+            Storage: '256GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 2750
+        },
+        {
+            Brand: 'Lenovo',
+            Core: 'Core i5',
+            RAM: '8GB RAM',
+            Storage: '512GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 2850
+        },
+        {
+            Brand: 'Lenovo',
+            Core: 'Core i5',
+            RAM: '8GB RAM',
+            Storage: '1TB SSD',
+            Inches: '14 or 15 inches',
+            Price: 3000
+        },
+        {
+            Brand: 'Lenovo',
+            Core: 'Core i5',
+            RAM: '16GB RAM',
+            Storage: '256GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 3150
+        },
+        {
+            Brand: 'Lenovo',
+            Core: 'Core i5',
+            RAM: '16GB RAM',
+            Storage: '512GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 3200
+        },
+        {
+            Brand: 'Lenovo',
+            Core: 'Core i5',
+            RAM: '16GB RAM',
+            Storage: '1TB SSD',
+            Inches: '14 or 15 inches',
+            Price: 3300
+        },
+        {
+            Brand: 'Lenovo',
+            Core: 'Core i7',
+            RAM: '8GB RAM',
+            Storage: '256GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 3000
+        },
+        {
+            Brand: 'Lenovo',
+            Core: 'Core i7',
+            RAM: '8GB RAM',
+            Storage: '512GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 3050
+        },
+        {
+            Brand: 'Lenovo',
+            Core: 'Core i7',
+            RAM: '8GB RAM',
+            Storage: '1TB SSD',
+            Inches: '14 or 15 inches',
+            Price: 3100
+        },
+        {
+            Brand: 'Lenovo',
+            Core: 'Core i7',
+            RAM: '16GB RAM',
+            Storage: '256GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 3250
+        },
+        {
+            Brand: 'Lenovo',
+            Core: 'Core i7',
+            RAM: '16GB RAM',
+            Storage: '512GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 3300
+        },
+        {
+            Brand: 'Lenovo',
+            Core: 'Core i7',
+            RAM: '16GB RAM',
+            Storage: '1TB SSD',
+            Inches: '14 or 15 inches',
+            Price: 3500
+        },
+        {
+            Brand: 'Dell',
+            Core: 'Core i3',
+            RAM: '8GB RAM',
+            Storage: '256GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 2500
+        },
+        {
+            Brand: 'Dell',
+            Core: 'Core i3',
+            RAM: '8GB RAM',
+            Storage: '512GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 2600
+        },
+        {
+            Brand: 'Dell',
+            Core: 'Core i3',
+            RAM: '8GB RAM',
+            Storage: '1TB SSD',
+            Inches: '14 or 15 inches',
+            Price: 2750
+        },
+        {
+            Brand: 'Dell',
+            Core: 'Core i3',
+            RAM: '16GB RAM',
+            Storage: '256GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 2800
+        },
+        {
+            Brand: 'Dell',
+            Core: 'Core i3',
+            RAM: '16GB RAM',
+            Storage: '512GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 2850
+        },
+        {
+            Brand: 'Dell',
+            Core: 'Core i3',
+            RAM: '16GB RAM',
+            Storage: '1TB SSD',
+            Inches: '14 or 15 inches',
+            Price: 3000
+        },
+        {
+            Brand: 'Dell',
+            Core: 'Core i5',
+            RAM: '8GB RAM',
+            Storage: '256GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 2750
+        },
+        {
+            Brand: 'Dell',
+            Core: 'Core i5',
+            RAM: '8GB RAM',
+            Storage: '512GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 2850
+        },
+        {
+            Brand: 'Dell',
+            Core: 'Core i5',
+            RAM: '8GB RAM',
+            Storage: '1TB SSD',
+            Inches: '14 or 15 inches',
+            Price: 3000
+        },
+        {
+            Brand: 'Dell',
+            Core: 'Core i5',
+            RAM: '16GB RAM',
+            Storage: '256GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 3150
+        },
+        {
+            Brand: 'Dell',
+            Core: 'Core i5',
+            RAM: '16GB RAM',
+            Storage: '512GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 3200
+        },
+        {
+            Brand: 'Dell',
+            Core: 'Core i5',
+            RAM: '16GB RAM',
+            Storage: '1TB SSD',
+            Inches: '14 or 15 inches',
+            Price: 3300
+        },
+        {
+            Brand: 'Dell',
+            Core: 'Core i7',
+            RAM: '8GB RAM',
+            Storage: '256GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 3000
+        },
+        {
+            Brand: 'Dell',
+            Core: 'Core i7',
+            RAM: '8GB RAM',
+            Storage: '512GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 3050
+        },
+        {
+            Brand: 'Dell',
+            Core: 'Core i7',
+            RAM: '8GB RAM',
+            Storage: '1TB SSD',
+            Inches: '14 or 15 inches',
+            Price: 3100
+        },
+        {
+            Brand: 'Dell',
+            Core: 'Core i7',
+            RAM: '16GB RAM',
+            Storage: '256GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 3250
+        },
+        {
+            Brand: 'Dell',
+            Core: 'Core i7',
+            RAM: '16GB RAM',
+            Storage: '512GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 3300
+        },
+        {
+            Brand: 'Dell',
+            Core: 'Core i7',
+            RAM: '16GB RAM',
+            Storage: '1TB SSD',
+            Inches: '14 or 15 inches',
+            Price: 3500
+        },
+        {
+            Brand: 'HP',
+            Core: 'Core i3',
+            RAM: '8GB RAM',
+            Storage: '256GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 2500
+        },
+        {
+            Brand: 'HP',
+            Core: 'Core i3',
+            RAM: '8GB RAM',
+            Storage: '512GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 2600
+        },
+        {
+            Brand: 'HP',
+            Core: 'Core i3',
+            RAM: '8GB RAM',
+            Storage: '1TB SSD',
+            Inches: '14 or 15 inches',
+            Price: 2750
+        },
+        {
+            Brand: 'HP',
+            Core: 'Core i3',
+            RAM: '16GB RAM',
+            Storage: '256GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 2800
+        },
+        {
+            Brand: 'HP',
+            Core: 'Core i3',
+            RAM: '16GB RAM',
+            Storage: '512GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 2850
+        },
+        {
+            Brand: 'HP',
+            Core: 'Core i3',
+            RAM: '16GB RAM',
+            Storage: '1TB SSD',
+            Inches: '14 or 15 inches',
+            Price: 3000
+        },
+        {
+            Brand: 'HP',
+            Core: 'Core i5',
+            RAM: '8GB RAM',
+            Storage: '256GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 2750
+        },
+        {
+            Brand: 'HP',
+            Core: 'Core i5',
+            RAM: '8GB RAM',
+            Storage: '512GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 2850
+        },
+        {
+            Brand: 'HP',
+            Core: 'Core i5',
+            RAM: '8GB RAM',
+            Storage: '1TB SSD',
+            Inches: '14 or 15 inches',
+            Price: 3000
+        },
+        {
+            Brand: 'HP',
+            Core: 'Core i5',
+            RAM: '16GB RAM',
+            Storage: '256GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 3150
+        },
+        {
+            Brand: 'HP',
+            Core: 'Core i5',
+            RAM: '16GB RAM',
+            Storage: '512GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 3200
+        },
+        {
+            Brand: 'HP',
+            Core: 'Core i5',
+            RAM: '16GB RAM',
+            Storage: '1TB SSD',
+            Inches: '14 or 15 inches',
+            Price: 3300
+        },
+        {
+            Brand: 'HP',
+            Core: 'Core i7',
+            RAM: '8GB RAM',
+            Storage: '256GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 3000
+        },
+        {
+            Brand: 'HP',
+            Core: 'Core i7',
+            RAM: '8GB RAM',
+            Storage: '512GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 3050
+        },
+        {
+            Brand: 'HP',
+            Core: 'Core i7',
+            RAM: '8GB RAM',
+            Storage: '1TB SSD',
+            Inches: '14 or 15 inches',
+            Price: 3100
+        },
+        {
+            Brand: 'HP',
+            Core: 'Core i7',
+            RAM: '16GB RAM',
+            Storage: '256GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 3250
+        },
+        {
+            Brand: 'HP',
+            Core: 'Core i7',
+            RAM: '16GB RAM',
+            Storage: '512GB SSD',
+            Inches: '14 or 15 inches',
+            Price: 3300
+        },
+        {
+            Brand: 'HP',
+            Core: 'Core i7',
+            RAM: '16GB RAM',
+            Storage: '1TB SSD',
+            Inches: '14 or 15 inches',
+            Price: 3500
+        }
+    ]
+
+    function dynamicFilteringCondition(filtering_item) {
+        const rental_pc_side_filtering_container = document.getElementById('rental_pc_side_filtering_container')
+
+        while (rental_pc_side_filtering_container.firstChild) {
+            rental_pc_side_filtering_container.removeChild(rental_pc_side_filtering_container.lastChild)
+        }
+
+        const filteringData = {
+            'Brand': ['Lenovo', 'Dell', 'HP'],
+            'Core': ['Core i3', 'Core i5', 'Core i7'],
+            'RAM': ['8GB RAM', '16GB RAM'],
+            'Storage': ['256GB SSD', '512GB SSD', '1TB SSD']
+        }
+
+        filteringData[filtering_item].map((single_condition) => {
+            const single_condition_element = document.createElement('button')
+            single_condition_element.className = 'rental_pc_side_filtering_button'
+            single_condition_element.innerHTML = single_condition
+            single_condition_element.addEventListener('click', () => filtering(filtering_item, single_condition))
+            rental_pc_side_filtering_container.appendChild(single_condition_element)
+        })
+    }
+
+    function filtering(event, category, filtering_value) {
+        const rental_pc_container = document.getElementById('rental_pc_container')
+        
+        while (rental_pc_container.firstChild) {
+            rental_pc_container.removeChild(rental_pc_container.lastChild)
+        }
+
+        laptopData.map((laptop) => {
+            console.log('category: ', category)
+            console.log('filtering_value: ', filtering_value)
+            if (laptop[category] == filtering_value) {
+                const rental_pc_card = document.createElement('div')
+                rental_pc_card.className = 'rental_pc_card'
+                rental_pc_container.appendChild(rental_pc_card)
+
+                const rental_pc_image_container = document.createElement('div')
+                rental_pc_image_container.className = 'rental_pc_image_container'
+                rental_pc_card.appendChild(rental_pc_image_container)
+
+                const pc_rental_image = document.createElement('img')
+                pc_rental_image.src = TwoLaptops
+                pc_rental_image.className = 'pc_rental_image'
+                rental_pc_image_container.appendChild(pc_rental_image)
+
+                const rental_pc_name = document.createElement('div')
+                rental_pc_name.className = 'rental_pc_name'
+                rental_pc_name.innerHTML = laptop['Brand']
+                rental_pc_card.appendChild(rental_pc_name)
+
+                const rental_pc_spec = document.createElement('div')
+                rental_pc_spec.className = 'rental_pc_spec'
+                rental_pc_card.appendChild(rental_pc_spec)
+
+                const Core = document.createElement('li')
+                Core.innerHTML = laptop['Core']
+                rental_pc_spec.appendChild(Core)
+
+                const RAM = document.createElement('li')
+                RAM.innerHTML = laptop['RAM']
+                rental_pc_spec.appendChild(RAM)
+
+                const Storage = document.createElement('li')
+                Storage.innerHTML = laptop['Storage']
+                rental_pc_spec.appendChild(Storage)
+
+                const Inches = document.createElement('li')
+                Inches.innerHTML = laptop['Inches']
+                rental_pc_spec.appendChild(Inches)
+
+                const rental_pc_price = document.createElement('div')
+                rental_pc_price.className = 'rental_pc_price'
+                rental_pc_price.innerHTML = `Rs. ${laptop['Price']} / month`
+                rental_pc_card.appendChild(rental_pc_price)
+            }
+        })
     }
 
     return (
         <div id='rental_pc_component'>
             <div id='filtering_condition_container'>
-                <select id="input_brand" className='filtering_condition_input'>
-                    <option value="Brand">Brand</option>
-                    <option value="Dell">Dell</option>
-                    <option value="Lenovo">Lenovo</option>
-                    <option value="Lenovo">HP</option>
-                </select>
-                <select id="input_processor" className='filtering_condition_input'>
-                    <option value="Processor">Processor</option>
-                    <option value="Lenovo">i3</option>
-                    <option value="Lenovo">i5</option>
-                    <option value="Lenovo">i7</option>
-                </select>
-                <select id="input_ram" className='filtering_condition_input'>
-                    <option value="RAM">RAM</option>
-                    <option value="Lenovo">8 GB</option>
-                    <option value="Lenovo">16 GB</option>
-                </select>
-                <select id="input_storage" className='filtering_condition_input'>
-                    <option value="Storage">Storage</option>
-                    <option value="Lenovo">250 GB SSD</option>
-                    <option value="Lenovo">500 GB SSD</option>
-                    <option value="Lenovo">1 tTB SSD</option>
-                </select>
-                <select id="input_edition" className='filtering_condition_input'>
-                    <option value="Edition">Edition</option>
-                    <option value="Lenovo">14</option>
-                    <option value="Lenovo">15</option>
-                </select>
+                <img src={LaptopIcon} onClick={() => dynamicFilteringCondition('Brand')} alt="" className='filtering_condition_image' />
+                <img src={ProcessorIcon} onClick={() => dynamicFilteringCondition('Core')} alt="" className='filtering_condition_image' />
+                <img src={RAMIcon} alt="" onClick={() => dynamicFilteringCondition('RAM')} className='filtering_condition_image' />
+                <img src={StorageIcon} alt="" onClick={() => dynamicFilteringCondition('Storage')} className='filtering_condition_image' />
             </div>
-            <div id='rental_pc_container'>
-                {
-                    Object.keys(laptopData).map( (Brand) => (
-                        Object.keys(laptopData[Brand]).map( (Core) => (
-                            Object.keys(laptopData[Brand][Core]).map( (RAM) => (
-                                Object.keys(laptopData[Brand][Core][RAM]).map( (Storage) => (
-                                    Object.keys(laptopData[Brand][Core][RAM][Storage]).map( (Inches) => (
-                                        <div className='rental_pc_card'>
-                                            <div className='rental_pc_image_container'>
-                                                <img src={TwoLaptops} alt="" className='pc_rental_image' />
-                                            </div>
-                                            <div className='rental_pc_name'>{Brand}</div>
-                                            <div className='rental_pc_spec'>
-                                                <li>{Core}</li>
-                                                <li>{RAM}</li>
-                                                <li>{Storage}</li>
-                                                <li>{Inches}</li>
-                                            </div>
-                                            <div className='rental_pc_price'>
-                                                Rs. {laptopData[Brand][Core][RAM][Storage][Inches]} / month
-                                            </div>
-                                        </div>
-                                    ))
-                                ))
-                            ))
+
+            <div id='rental_pc_main_content'>
+                <div id='rental_pc_side_filtering_container'>
+                    <button className='rental_pc_side_filtering_button' onClick={() => filtering( 'Brand', 'Lenovo')}>Lenovo</button>
+                    <button className='rental_pc_side_filtering_button' onClick={() => filtering( 'Brand', 'Dell')}>Dell</button>
+                    <button className='rental_pc_side_filtering_button' onClick={() => filtering( 'Brand', 'HP')}>HP</button>
+                </div>
+                <div id='rental_pc_container'>
+                    {
+                        laptopData.map((data) => (
+                            <div className='rental_pc_card'>
+                                <div className='rental_pc_image_container'>
+                                    <img src={TwoLaptops} alt="" className='pc_rental_image' />
+                                </div>
+                                <div className='rental_pc_name'>{data.Brand}</div>
+                                <div className='rental_pc_spec'>
+                                    <li>{data.Core}</li>
+                                    <li>{data.RAM}</li>
+                                    <li>{data.Storage}</li>
+                                    <li>{data.Inches}</li>
+                                </div>
+                                <div className='rental_pc_price'>
+                                    Rs. {data.Price} / month
+                                </div>
+                            </div>
                         ))
-                    ))
-                }
+                    }
+                </div>
             </div>
+
         </div>
     )
 }
