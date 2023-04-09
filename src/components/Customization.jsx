@@ -22,7 +22,7 @@ function Customization(){
     }
 
     function getPrice(){
-        if(Brand != 'Brand' && Core != 'Processor' && RAM != 'RAM' && Storage != 'Storage' && ScreenSize != 'Screen Size'){
+        if(Brand != 'Brand' && Core != 'Processor' && RAM != 'RAM' && Storage != 'Storage' && ScreenSize != 'Screen Size' && Brand != '' && Core != '' && RAM != '' && Storage != '' && ScreenSize != ''){
             changePrice(3500)
         }else{
             document.getElementById('customizatoin_error_msg').innerHTML = 'Please select all inputs'
