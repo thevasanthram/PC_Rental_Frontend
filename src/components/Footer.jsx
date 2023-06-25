@@ -8,7 +8,7 @@ function Footer(){
         <div id="footer_container">
             <div id="about_us_container">
                 <div className="footer_heading">About Us</div>
-                <div className="footer_content">At ABC Systems, we're passionate about providing high-quality laptop rental services that meet the unique needs of our customers. With over two years of experience in the industry, we've established ourselves as a trusted and reliable source for laptops in India. Whether you need a laptop for a day or a month, we have the perfect rental package for you.</div>
+                <div className="footer_content">At ABC Systems, we're passionate about providing high-quality laptop rental services that meet the unique needs of our customers. With over two years of experience in the industry, we've established ourselves as a trusted and reliable source for laptops in India. We have the perfect rental package for you.</div>
             </div>
             <div id="contact_container">
                 <div id="contact_us_container">
@@ -20,9 +20,8 @@ function Footer(){
                     </div>
                 </div>
                 <div id="social_media_container">
-                    <div className="footer_heading">Follow us on social media</div>
+                    <div className="footer_heading">Follow us on instagram</div>
                     <div id="social_media_list">
-                        <img src={FaceBookLogo} alt="" className="social_media_logo"/>
                         <img src={InstagramLogo} alt="" className="social_media_logo"/>
                     </div>
                 </div>

@@ -2,15 +2,14 @@
     display: flex;
     align-items: center;
     justify-content: right;
+    /* position: relative; */
     gap: 1rem;
-    position: sticky;
-    top: 5%;
-    width: 80%;
+    width: 100%;
     height: 7vh;
     background-color: #7F5283;
-    padding: 10px 35px;
-    left: 8%;
-    border-radius: 15px;
+    /* padding: 10px 35px; */
+    /* left: 8%; */
+    /* border-radius: 15px; */
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     z-index: 3;
 }
@@ -29,10 +28,10 @@
 @media screen and (max-width: 768px) {
     #navigation_bar {
         gap: 0.1rem;
-        top: 5%;
-        width: 80%;
+        /* top: 5%; */
+        /* width: 80%; */
         height: 6vh;
-        left: 6%;
+        /* left: 6%; */
     }
 
     .navigation_buttons {
@@ -44,10 +43,10 @@
 @media screen and (max-width: 480px) {
     #navigation_bar {
         gap: 0.1rem;
-        top: 5%;
-        width: 70%;
+        /* top: 5%; */
+        /* width: 70%; */
         height: 5vh;
-        left: 8%;
+        /* left: 8%; */
     }
 
     .navigation_buttons {

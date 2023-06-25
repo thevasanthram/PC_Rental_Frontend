@@ -36,7 +36,7 @@ function LandingPage(){
             <div className='landing_page_card'>
                 <div className='landing_page_text_container'>
                     <div className='landing_page_heading'>How it Works</div>
-                    <div className='landing_page_content'>Select your ideal laptop from our website and make an online payment. We'll deliver the same laptop to you in no time.</div>
+                    <div className='landing_page_content'>Select your ideal laptop from our website. We'll deliver the same laptop to you in no time.</div>
                 </div>
                 <img src={How_it_works_image} alt="" style={{width: '45%'}}/>
             </div>

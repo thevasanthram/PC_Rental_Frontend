@@ -465,17 +465,15 @@ function Customization(){
             console.log(laptopData.length)
             laptopData.map( (laptop) => {
                 if(laptop.Brand == Brand && laptop.Core == Core.replace('Intel ','') && laptop.RAM == RAM.replace(' ','')+' RAM' && laptop.Storage == Storage.replace(' ','')){
-                    console.log('entering')
                     changePrice(laptop.Price)
                 }else{
                     console.log('not')
                 }
             })
         }else{
-            document.getElementById('customizatoin_error_msg').innerHTML = 'Please select all inputs'
-
+            document.getElementById('customizatoin_error_msg').style.display = 'block'
             setTimeout( () => {
-                document.getElementById('customizatoin_error_msg').innerHTML = ''
+                document.getElementById('customizatoin_error_msg').style.display = 'none'
             },3000)
         }
     }
@@ -522,7 +520,7 @@ function Customization(){
                         <div id="customization_laptop_screen">Screen Size: {ScreenSize}</div>
                     </div>
                     {Price == 0 ? <button id='customization_laptop_price' onClick={getPrice}>Get Price</button> : <div id="customization_laptop_prices">Price: {Price}</div>}
-                    <span id="customizatoin_error_msg"></span>
+                    <span id="customizatoin_error_msg">Please select all inputs</span>
                 </div>
             </div>
         </div>

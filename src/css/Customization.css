@@ -39,6 +39,7 @@
     justify-content: center;
     gap: 5rem;
     padding: 4% 3%;
+    font-family: 'Roboto', sans-serif;
 }
 
 #customization_laptop_image {
@@ -51,12 +52,65 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    width: 40%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    padding: 2%;
 }
 
 #customization_laptop_specs{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
 #customization_laptop_price{
     
+}
+
+#customizatoin_error_msg{
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    #customization_condition_container {
+        margin: 1rem 0rem 1rem 0rem;
+    }
+
+    .customization_condition_input {
+        font-size: 90%;
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #customization_condition_container {
+        margin: 2rem 0rem 2rem 0rem;
+    }
+
+    .customization_condition_input {
+        font-size: 70%;
+        width: 15%;
+        background-position-x: 90%;
+        background-position-y: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #customization_component{
+        margin: 2rem 0rem;
+    }
+
+    .customization_condition_input {
+        font-size: 30%;
+        width: 14%;
+        background-position-x: 110%;
+        background-position-y: 50%;
+        padding: 2% 2%;
+    }
+
+    #customization_main_content{
+        flex-direction: column;
+    }
 }

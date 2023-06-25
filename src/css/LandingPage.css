@@ -1,5 +1,5 @@
 #landing_page_container {
-    margin: 3rem 0rem 2rem 0rem;
+    /* margin: 3rem 0rem 2rem 0rem; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,7 +47,7 @@
 
 @media screen and (max-width: 1024px) {
     #landing_page_container {
-        margin: 4rem 0rem 2rem 0rem;
+        margin: 2rem 0rem 2rem 0rem;
     }
     
     .landing_page_text_container{
@@ -68,7 +68,7 @@
 
 @media screen and (max-width: 768px) {
     #landing_page_container {
-        margin: 7rem 0rem 2rem 0rem;
+        margin: 2rem 0rem 2rem 0rem;
         gap: 5rem;
     }
     
@@ -89,7 +89,7 @@
 
 @media screen and (max-width: 480px) {
     #landing_page_container {
-        margin: 6rem 0rem 2rem 0rem;
+        margin: 2rem 0rem 2rem 0rem;
         gap: 5rem;
     }
     
