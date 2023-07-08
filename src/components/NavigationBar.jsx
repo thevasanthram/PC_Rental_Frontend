@@ -19,6 +19,7 @@ function NavigationBar() {
     }
     return (
         <div id="navigation_bar">
+            <button className='navigation_buttons' onClick={(event) => routeNavigationBar(event, '/')}>Home</button>
             <button className='navigation_buttons' onClick={(event) => routeNavigationBar(event, '/rent')}>Rent</button>
             <button className='navigation_buttons' onClick={(event) => routeNavigationBar(event, '/customize')}>Customize</button>
         </div>

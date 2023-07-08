@@ -39,6 +39,7 @@
     justify-content: center;
     gap: 5rem;
     padding: 4% 3%;
+    width: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -51,8 +52,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
-    width: 40%;
+    gap: 1rem;
+    width: 100%;
+    height: 30vh;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     padding: 2%;
 }
@@ -65,12 +67,21 @@
     gap: 1rem;
 }
 
-#customization_laptop_price{
-    
+#customization_button_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    gap: 1rem;
 }
 
-#customizatoin_error_msg{
-    display: none;
+#customization_laptop_price {
+    background: #7F5283;
+    color: white;
+    padding: 2%;
+    width: 90%;
+    border: none;
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 1024px) {

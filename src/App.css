@@ -1,3 +1,42 @@
 body {
     background-color: #FEFBF6;
 }
+
+#call_icon_container {
+    position: fixed;
+    bottom: 5%;
+    right: 4%;
+}
+
+#call_icon{
+    width: 75px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    #call_icon{
+        width: 75px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #call_icon{
+        width: 80px;
+    }
+
+    #call_icon_container {
+        bottom: 5%;
+        right: 6%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #call_icon{
+        width: 60px;
+    }
+
+    #call_icon_container {
+        bottom: 4%;
+        right: 6%;
+    }
+}

@@ -62,6 +62,8 @@ function LandingPage(){
                 </div>
                 <img src={Customization_image} alt="" style={{width: '50%'}}/>
             </div>
+
+            
         </div>
     )
 }
