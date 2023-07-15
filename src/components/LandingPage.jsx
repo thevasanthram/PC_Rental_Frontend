@@ -8,6 +8,12 @@ import WelcomeImage from './../images/laptops.png'
 import How_it_works_image from './../images/how_it_works.png'
 
 function LandingPage(){
+    const features_and_benefits = {
+        'Fast Laptop Rental Delivery': 'Rent a laptop and receive it within hours! We prioritize promptness, ensuring you can start using it right away for your time-sensitive needs.',
+        'Flexible Rental Periods:': 'Choose the perfect rental duration for your unique needs. Pay only for what you need, ensuring cost-effective solutions tailored just for you.',
+        'Customizable Rental Packages': 'Tailor your rental to fit your exact needs. From accessories to extended durations, create a personalized solution for your projects or events.',
+        'Secure Data Protection': 'Your privacy matters. We prioritize customer data security, ensuring complete confidentiality with advanced safeguards for peace of mind throughout your rental.',
+    }
     return (
         <div id='landing_page_container'>
             <div className='landing_page_card'>
@@ -16,6 +22,18 @@ function LandingPage(){
                     <div className='landing_page_content'>Welcome to ABC Systems, your source for high-quality laptop rentals. We offer a wide range of models and customization options to meet your unique needs.</div>
                 </div>
                 <img src={WelcomeImage} alt="" style={{width:'45%'}}/>
+            </div>
+
+            <div id='landing_page_why_choose_us'>
+                <div id='landing_page_why_choose_us_heading'>Why Choose Us ?</div>
+                <div id='landing_page_features_card_container'>
+                    {Object.keys(features_and_benefits).map( (feature) => (
+                        <div className='landing_page_feature_card'>
+                            <div className='landing_page_feature_title'>{feature}</div>
+                            <div className='landing_page_feature_content'>{features_and_benefits[feature]}</div>
+                        </div>
+                    ))}
+                </div>
             </div>
 
             <div className='landing_page_card'>
