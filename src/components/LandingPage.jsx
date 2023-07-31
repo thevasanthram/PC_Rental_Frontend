@@ -37,7 +37,7 @@ function LandingPage(){
             </div>
 
             <div className='landing_page_card'>
-                <img src={BannerLaptop} alt="" style={{width:'45%'}}/>
+                <img src={BannerLaptop} alt="" style={{width:'60%'}}/>
                 <div className='landing_page_text_container'>
                     <div className='landing_page_heading'>Features and Benefits</div>
                     <div className='landing_page_content'>
