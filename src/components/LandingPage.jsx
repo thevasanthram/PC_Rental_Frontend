@@ -19,7 +19,7 @@ function LandingPage(){
             <div className='landing_page_card'>
                 <div className='landing_page_text_container'>
                     <div className='landing_page_heading'>Laptops on Rent</div>
-                    <div className='landing_page_content'>Welcome to ABC Systems, your source for high-quality laptop rentals. We offer a wide range of models and customization options to meet your unique needs.</div>
+                    <div className='landing_page_content'>Welcome to Zayne Air, your source for high-quality laptop rentals. We offer a wide range of models and customization options to meet your unique needs.</div>
                 </div>
                 <img src={WelcomeImage} alt="" style={{width:'45%'}}/>
             </div>
@@ -78,7 +78,7 @@ function LandingPage(){
                         <li>Our team can work with you to create a customized rental package that meets your unique needs and budget. Contact us today to learn more!</li>
                     </div>
                 </div>
-                <img src={Customization_image} alt="" style={{width: '50%'}}/>
+                <img src={Customization_image} alt="" style={{width: '50%'}}/>  
             </div>
 
             
