@@ -27,7 +27,7 @@ function Footer(){
                 </div>
             </div>
             <div id="copyrights_content">
-                By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. © abcSystems™ Ltd. All rights reserved.
+                By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. © Zayne Air Pvt. Ltd. All rights reserved.
             </div>
         </div>
     )
